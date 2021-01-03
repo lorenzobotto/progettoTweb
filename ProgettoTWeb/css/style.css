@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button, #button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    height: 8%;
+}
+
+pre {
+    line-height: 20px;
+    color: #999;
+    font-weight: 300;
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    white-space: pre-line;
+}
+
+#logo {
+    cursor: pointer;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+#cart {
+    vertical-align: middle;
+}
+
+#cartDiv {
+    display: flex;
+    align-items: center;
+}
+
+#cartCount {
+    padding-left: 7px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: #999;
+}
+
+#nav li:nth-child(5) {
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+#nav li:last-child {
+    padding-left: 10px;
+}
+
+#user{
+    padding-right: 5px;
+    padding-left: 30px;
+}
+
+#unlock{
+    padding-right: 5px;
+}
+
+
+#nav li:nth-child(6) {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#nav li:nth-child(7) {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#nav li a {
+    transition: all 0.3s ease 0;
+}
+
+#nav li a:hover {
+    color: #0088a9;
+}
+
+button, #button, input[type="submit"] {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+button:hover, #button:hover, input[type="submit"]:hover {
+    background-color:  #00b8e6;
+}
+
+
+#hero, #heroEventi {
+    display: flex;
+    width: 100%;
+    height: 92%;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9)), url('../img/bg-hero.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#heroEventi {
+    background: linear-gradient(0deg, rgba(0,0,0,.7), rgba(0,0,0,0.7)), url('../img/bg-eventi.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#hero__content, #heroEventi__content {
+    background-color: transparent;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+#heroEventi {
+    height: 53%;
+}
+
+#testointro {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+h1, h3 {
+    background-color: transparent;
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+#poster {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#poster__img {
+    width: 65%;
+    height: 100%;
+}
+
+#poster__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#poster__content {
+    width: 35%;
+    padding: 50px;
+}
+
+#poster__content h3 {
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 20px;
+    color: #999;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+#posterhero, #posterheroContatti {
+    display: flex;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.8)), url('../img/bg-aboutus.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#posterheroContatti {
+    background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.8)), url('../img/bg-contacts.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#posterherotitle {
+    background-color: transparent;
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#posterhero__text {
+    background-color: transparent;
+    width: 50%;
+    padding: 30px;
+    padding-right: 10%;
+}
+
+#posterhero__text h4, p{
+    background-color: transparent;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+#posterhero__text h4{
+    font-size: 20px;
+}
+
+#posterhero__text p{
+    padding-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+}
+    
+.footer > * {
+    flex:  1 100%;
+}
+
+.l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.r-footer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a:hover {
+    color: #0088a9;
+}
+
+.box li, a {
+    color: #999;
+}
+
+.h-box {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.b-footer {
+    text-align: center;
+    color: #999;
+    padding-top: 30px;
+}
+
+.b-footer p {
+    color: #999;
+}
+
+.l-footer p {
+    padding-right: 20%;
+    color: #999;
+}   
+
+@media screen and (min-width: 600px) {
+    .r-footer > * {
+    flex: 1;
+    }
+
+    .features {
+        flex-grow: 2;
+    }
+
+    .l-footer {
+        flex: 1 0px;
+    }
+
+    .r-footer {
+        flex: 2 0px;
+    }
+}
+
+#arrowUpRegistrazione, #arrowUpLogin, #arrowUpLogged {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid #fff;
+    right: 16.1%;
+    top: 5.5%;
+    display: none;
+}
+
+#arrowUpLogin {
+    right: 10.3%;
+}
+
+#arrowUpLogged {
+    right: 11.1%;
+}
+
+#registrazioneForm, #loginForm, #logoutForm {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 16%;
+    height: auto;
+    background: #fff;
+    border-radius: 3px;
+    border-bottom: 5px solid #24252A;
+    right: 11.2%;
+    top: 7.3%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    letter-spacing: -0.05em;
+    display: none;
+}
+
+#loginForm {
+    width: 11%;
+    right: 6.1%;
+}
+
+#logoutForm {
+    right: 5.2%;
+}
+
+#registrazioneForm div, #loginForm div, #logoutForm div {
+    background: #fff;
+}
+
+#emaildivreg, #usernamedivreg, #passworddivreg, #usernamedivlogin, #passworddivlogin {
+    padding-bottom: 10px;
+}
+
+#registrazioneForm h4, #loginForm h4, #logoutForm h4 {
+    text-align: left;
+    color: black;
+    padding-bottom: 14px;
+    background: #fff;
+}
+
+#registrazioneForm input[type="text"], input[type="password"], #loginForm input[type="text"], input[type="password"]{
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background: #fff;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#registrazioneForm input[type="submit"], #loginForm input[type="submit"]{
+    width: 100%;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+#errorMsg {
+    text-align: left;
+    display: none;
+    color: red;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+#userLogged {
+    cursor: pointer;
+}
+
+#searchBar {
+    margin: 0 auto;
+    width: 80%;
+    background: #24252A;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#searchBar div{
+    display: inline-block;
+}
+
+select {
+    min-width: 320px;
+    max-width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+    font-size: 1rem;
+    padding: 0.7em;
+    padding-right: 7em;
+    background: #4d5061;
+    border-radius: 5px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #fff;
+    border: 0;
+}
+
+
+
+#customSelectCat option, #customSelectSotCat option {
+    background:  #4d5061;
+}
+
+#customArrowCat, #customArrowSotCat {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: #3b3c47;
+    height: 100%;
+    width: 4rem;
+    pointer-events: none;
+}
+
+#customSelectCat, #customSelectSotCat {
+    position: relative;
+    width: 320px;
+}
+
+#customSelectSotCat select {
+    display: none;
+}
+
+#customArrowSotCat {
+    display: none;
+}
+
+#customArrowCat::after, #customArrowCat::before, #customArrowSotCat::after, #customArrowSotCat::before {
+    --size: 0.5em;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#customArrowCat::before, #customArrowSotCat::before{
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid rgba(255, 255, 255, 255);
+    top: 36%;
+}
+
+#customArrowCat::after, #customArrowSotCat::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid rgba(255, 255, 255, 255);
+    top: 64%;
+}
+
+#searchBar h2 {
+    color: #fff;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+input[type="date"] {
+    min-width: 120px;
+    max-width: 120px;
+    border-radius: 5px;
+    border: 0;
+    width: auto;
+    height: 43.4px;
+    background: #4d5061;
+    display: none;
+    color: #fff;
+}
+
+#heroEventi h1 {
+    padding-bottom: 90px;
+}
+
+#cerca {
+    display: none;
+}
+
+#results, #resultsCarrello {
+    padding-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background: #3b3c47;
+}
+
+#sectionResults, #carrello, #biglietti {
+    background: #3b3c47;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sectionResults {
+    display: none;
+}
+
+.container, #container {
+    cursor: grab;
+    padding: 10px;
+    width: 70%;
+    background: #24252A;
+    margin: 20px auto;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #0d0d0d;
+    display: flex;
+}
+
+#container {
+    cursor: context-menu;
+}
+
+.container div, .container h2, #container div, #container h2 {
+    background: #24252A;
+}
+
+.container h2, #container h2 {
+    font-weight: 700;
+}
+
+#imgBox {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    align-self: flex-start;
+}   
+
+#imgBox img {
+    padding-right: 10px;
+}
+
+#content {
+    padding-left: 10px;
+    max-width: 50%;
+}
+
+#content p, #content h2 {
+    color: #fff;
+    flex: 1 1 auto;
+    padding-bottom: 20px;
+}
+
+#content #luogo {
+    padding-bottom: 0px;
+}
+
+#content p {
+    color: #999;
+}
+
+#buy {
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#buy > * {
+    margin: 0 auto;
+}
+
+#buy span {
+    align-self: right;
+    background: #24252A;
+    display: none;
+}
+
+#carrello, #biglietti {
+    min-height: 53vh;
+    background: #3b3c47;
+}
+
+#carrello h1, #biglietti h1 {
+    font-size: 40px;
+    padding: 30px;
+    width: 83%;
+    margin: 0 auto;
+}
+
+#biglietti h1 {
+    width: 63.5%;
+}
+
+#resultsCarrello {
+    display: flex;
+    align-items:flex-start;
+    align-content:flex-start;
+}
+
+input[type="number"] {
+    line-height: 20px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    width: 20%;
+}
+
+#price {
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #0d0d0d;
+    flex-direction: column;
+}
+
+#price p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#price > * {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#tickets #container {
+    width: 100%;
+    margin: auto 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    box-shadow: none;
+    border-radius: none;
+}
+
+#tickets #container:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#tickets #container:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#tickets {
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #0d0d0d;
+}
+
+#listTickets, #delivery, #finalPrice, #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tickets, #price {
+    display: none;
+}
+
+#delivery > *, #listTickets > *, #finalPrice > *, #buttons > * {
+    flex-basis: 100%;
+}
+
+#buttons {
+    padding-top: 20px;
+}
+
+#buttons button:first-child {
+    margin-right: 5px;
+}
+
+#buttons button {
+    padding: 9px 15px;
+}
+
+#listTickets p {
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+#delivery p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+#listTickets, #delivery {
+    padding: 0px;
+}
+
+#delivery p:nth-child(2) {
+    color: green;
+}
+
+#carrelloEmpty, #bigliettiEmpty, #acquisto {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #0d0d0d;
+    width: 30%;
+    margin: 100 auto;
+}
+
+#emptyResults {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #0d0d0d;
+    width: 30%;
+    margin: 0px auto;
+}
+
+#emptyResults p {
+    padding: 20px;
+}
+
+#bigliettiAcquistati p {
+    text-align: left;
+    padding-left: 10px;
+    color: black;
+}
+
+#bigliettiAcquistati p:hover {
+    text-align: left;
+    padding-left: 10px;
+    color:rgba(0, 136, 169, 0.8);
+}
+
+#logoutForm hr {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#buy #customSelectCat span {
+    width: 1.5rem;
+    display: inline;
+    background: #3b3c47;
+}
+
+#buy #customSelectCat select {
+    padding-right: 2em;
+    font-size: 0.7rem;
+}
+
+#quantityDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+#quantityDiv #customSelectCat select{
+    font-size: 1rem;
+    padding: 2px;
+    padding-right: 2rem;
+}
+
+#quantityDiv #customArrowCat::after, #quantityDiv #customArrowCat::before {
+    --size: 0.4em;
+}
+
+#quantityDiv #customArrowCat::before {
+    top: 32%;
+}
+
+#quantityDiv #customArrowCat::after {
+    top: 68%;
+}
+
+#quantityDiv p {
+    padding-bottom: 0px;
+    padding-right: 5px;
+}
+
+#errorAcquisto {
+    display: none;
+    color: red;
+    padding-top: 10px;
+}
+
+#sectionResults #tickets {
+    margin: 20px auto;
+}
+
+.containerBig #buy {
+    padding-right: 20px;
+}
+
+#descOrdine {
+    display: flex;
+    justify-content: space-between;
+}
+
+#descOrdine p:last-child {
+    margin-left: auto;
+}
+
+#descOrdine p:last-child {
+    margin-left: auto;
+}
+
+#descOrdine p {
+    padding: 15px;
+}
+
+#posterhero__text a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.boxInline li{
+    display: inline-block;
+}
+
+#quantityDiv select{
+    min-width: 50px;
+    max-width: 50px;
+}
+
+#quantityDiv {
+    width: 50px;
+}
+
+#headerTable {
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+#searchBox {
+    background: #3b3c47;
+    height: 34px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.searchTxt {
+  height: 24px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 24px;
+  width: 0px;
+}
+
+.searchBtn {
+    float: right;
+    border-radius: 50%;
+    background: #3b3c47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBtn img {
+    background: #3b3c47;
+}
+
+#headerCarrello {
+    display: flex;
+    align-items: center;
+}
