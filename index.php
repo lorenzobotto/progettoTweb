@@ -1,11 +1,11 @@
         <?php 
             session_start();
-            include("top.html");
+            include("./html/top.html");
         ?>
-        <script src="../js/home.js"></script>
+        <script src="./js/home.js"></script>
     </head>
     <body>
-        <?php include("header.php"); ?>
+        <?php include("./html/header.php"); ?>
         <div id="hero">
             <div id="hero__content">
                 <p id="testointro">Daily Ticket</p>
@@ -15,7 +15,7 @@
         </div>
         <div id="poster">
             <div id="poster__img">
-                <img id="poster1" src="../img/bg-hero.jpg" alt="">
+                <img id="poster1" src="./img/bg-hero.jpg" alt="">
             </div>
             <div id="poster__content">
                 <h3>Le categorie</h3>
@@ -53,4 +53,4 @@
                 </p>
             </div>
         </div>
-        <?php include("footer.php");?>
+        <?php include("./html/footer.php");?>
