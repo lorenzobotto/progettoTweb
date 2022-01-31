@@ -34,7 +34,7 @@
                         Questa è la categoria per chi vuole godersi uno spettacolo che potrà essere un Musical e varietà, Prosa, Teatro lirico, Cabaret, Balletto classico e moderno oppure concerti di musica classica.
                     </pre>
                 </p>
-                <a id="compra" href="eventi.php"><button>Acquista biglietti</button></a>
+                <a id="compra" href="./html/eventi.php"><button>Acquista biglietti</button></a>
             </div>
         </div>
         <div id="posterhero">
