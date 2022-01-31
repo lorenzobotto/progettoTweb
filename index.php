@@ -1,5 +1,6 @@
         <?php 
             session_start();
+            $_SESSION['indexCall'] = 'true';
             include("./html/top.html");
         ?>
         <script src="./js/home.js"></script>
