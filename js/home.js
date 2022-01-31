@@ -9,6 +9,6 @@
 $(function() {
     // Si definisce il click per i pulsanti di acquisto biglietti.
     $(".acquistaHome").click(function() {
-        window.location = "eventi.php";
+        window.location = "./html/eventi.php";
     })
 });
