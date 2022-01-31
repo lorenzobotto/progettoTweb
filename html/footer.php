@@ -16,9 +16,9 @@
                 <li>
                     <h2>Link utili</h2>
                     <ul class="box">
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="eventi.php">Eventi</a></li>
-                        <li><a href="contatti.php">Contatti</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="./html/eventi.php">Eventi</a></li>
+                        <li><a href="./html/contatti.php">Contatti</a></li>
                         <?php
                             if (isset($_SESSION['user'])){
                         ?>
