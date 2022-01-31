@@ -305,7 +305,7 @@ header {
     width: 100%;
     padding: 305px 0;
     align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9)), url('../img/bg-home.jpg') no-repeat center center;
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9)), url('./img/bg-home.jpg') no-repeat center center;
     background-size: cover;
 }
 
