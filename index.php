@@ -7,7 +7,7 @@
             */
             session_start();
             session_write_close();
-            include("top.html");
+            include("./html/top.html");
         ?>
         <script src="./js/home.js"></script>
         <script src="./js/common.js"></script>
