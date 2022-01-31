@@ -7,6 +7,7 @@
             */
             session_start();
             session_write_close();
+            $_SESSION['index'] = 'true';
             include("./html/top.html");
         ?>
         <script src="./js/home.js"></script>

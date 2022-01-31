@@ -40,7 +40,8 @@
             while($row = $idsDb->fetch()){
                 $ids = $ids . $db->quote($row['idEvento']) . ",";
             }
-            echo 'console.log(SELECT * FROM eventi WHERE id IN (' . substr($ids, 0, -1) . ') ORDER BY FIELD(id, ' . substr($ids, 0, -1) . '))'
+            $message = "SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")";
+            echo "<script type='text/javascript'>alert('$message');</script>";
             $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
             $cart->execute();
         } catch(PDOException $ex){

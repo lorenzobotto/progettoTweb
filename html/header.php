@@ -106,7 +106,12 @@
                                 <a id='headerCarrello' href="../html/carrello.php">
                                     <img id="cart" src="../img/cart-73-24.png" alt="Icona del carrello">
                                     <?php
-                                        include("../php/common/common.php");
+                                        if (isset($_SESSION['index'])){
+                                            include("./php/common/common.php");
+                                        } else {
+                                            include("../php/common/common.php");
+                                        }
+                                        
                                         $db = connect_database();
                                         $count = $db->prepare("SELECT count(*) as count FROM carrello WHERE username=" . $db->quote($_SESSION['user']));
                                         $count->execute();
