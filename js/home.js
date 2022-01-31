@@ -286,7 +286,7 @@ function login(){
 
 function loggedSite(response){
     if (response == 1){
-        window.location = "../html/home.php";
+        window.location = "../index.php";
     } else {
         alert("Invalid username and password!")
     }

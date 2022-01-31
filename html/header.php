@@ -5,7 +5,7 @@
     ?>
             <nav>
                 <ul id="nav">
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="eventi.php">Eventi</a></li>
                     <li><a href="contatti.php">Contatti</a></li>
                     <li>
@@ -74,7 +74,7 @@
     ?>
             <nav>
                 <ul id="nav">
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="eventi.php">Eventi</a></li>
                     <li><a href="contatti.php">Contatti</a></li>
                     <li>
