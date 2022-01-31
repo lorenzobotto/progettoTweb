@@ -6,8 +6,8 @@
             *                    Contiene una sezione dove è presente il titolo e una sezione per il contenuto.
             */
             session_start();
-            session_write_close();
             $_SESSION['index'] = 'true';
+            session_write_close();
             include("./html/top.html");
         ?>
         <script src="./js/home.js"></script>
