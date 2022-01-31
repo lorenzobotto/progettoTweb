@@ -40,11 +40,8 @@
             while($row = $idsDb->fetch()){
                 $ids = $ids . $db->quote($row['idEvento']) . ",";
             }
-            if ($ids == "") {
-                $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ")");
-            } else {
-                $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
-            }
+            console.log("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
+            $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
             $cart->execute();
         } catch(PDOException $ex){
             die('Error in making query: ' . $ex->getMessage());
