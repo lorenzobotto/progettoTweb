@@ -516,7 +516,7 @@ select {
 
 input[type="date"] {
     min-width: 120px;
-    max-width: 125px;
+    max-width: 135px;
     border-radius: 5px;
     border: 0;
     width: auto;
