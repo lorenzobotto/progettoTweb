@@ -1,11 +1,19 @@
-        <?php include("top.html");?>
+        <?php
+            /*   Nome:           Lorenzo
+            *    Cognome:        Botto
+            *    Descrizione:    Codice PHP/HTML per la pagina "carrello.php", che include top, header e footer.
+            *                    Contiene una sezione del carrello dove è presente un'intestazione e una sezione visibile
+            *                    solo se non ci sono biglietti nel carrello. E' presente una sezione dove verranno aggiunti
+            *                    tutti i biglietti del carrello (ed il prezzo totale) e una sezione che sarà visibile solo
+            *                    ad acquisto concluso.
+            */
+            include("top.html"); 
+        ?>
+        <script src="../js/common.js"></script>
         <script src="../js/carrello.js"></script>
     </head>
     <body>
-        <?php 
-            session_start();
-            include("header.php"); 
-        ?>
+        <?php include("header.php"); ?>
         <div id="carrello">
             <h1>Carrello</h1>
             <div id="carrelloEmpty">
@@ -14,11 +22,11 @@
                 <button id="eventiButton">Visualizza Eventi</button>
             </div>
             <div id="resultsCarrello">
-                <div id="tickets"></div>
-                <div id="price">
+                <div id="ticketsCarrello"></div>
+                <div id="totalPrice">
                     <p> Dettagli sui prezzi </p>
                     <hr>
-                    <div id="listTickets"></div>
+                    <div id="numberTickets"></div>
                     <div id="delivery">
                         <p>Costi di spedizione</p>
                         <p>GRATIS</p> 
@@ -28,11 +36,11 @@
                         <p>Totale da pagare</p>
                         <p id="finalPriceP"></p>
                     </div>
-                    <div id="buttons">
+                    <div id="buttonsPrice">
                         <button id="svuota">Svuota carrello</button>
                         <button id="concludi">Acquista</button>
                     </div>
-                    <span id="errorAcquisto">Devi effettuare il login per completare l'acquisto!</span>
+                    <span id="errorAcquisto"></span>
                 </div>
             </div>
             <div id="acquisto">
@@ -41,4 +49,4 @@
                 <button id="buttonAcquista">Visualizza biglietti acquistati</button>
             </div>
         </div>
-        <?php include("footer.php");?>
+        <?php include("footer.php"); ?>

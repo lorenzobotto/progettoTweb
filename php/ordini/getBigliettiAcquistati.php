@@ -1,5 +1,10 @@
 <?php
-    include("common.php");
+    /*   Nome:           Lorenzo
+    *    Cognome:        Botto
+    *    Descrizione:    Codice PHP per recuperare tutti gli ordini effettuati da un utente.
+    *    Return:         Oggetto JSON.
+    */
+    include("../common/common.php");
 
     header("Content-type: application/json");
 
@@ -8,10 +13,13 @@
     session_start();
 
     try {
-        $tickets = $db->prepare("SELECT o.id, o.data as dataOrdine, quantita, titolo, descrizione, e.data as data, prezzo, citta, luogo, ora, url FROM ordini as o, eventi as e WHERE o.idEvento = e.id AND username=" . $db->quote($_SESSION['user']) . " ORDER BY o.id");
+        $tickets = $db->prepare("SELECT o.id, o.data as dataOrdine, quantita, titolo, descrizione, e.data as data,
+                                 prezzo, citta, luogo, ora, url FROM ordini as o, eventi as e 
+                                 WHERE o.idEvento = e.id AND username=" . 
+                                 $db->quote($_SESSION['user']) . " ORDER BY o.id");
         $tickets->execute();
     } catch(PDOException $ex){
-        die('Could not connect: ' . $ex->getMessage());
+        die('Error in making query: ' . $ex->getMessage());
     }
 
     $matches = 0;
@@ -50,7 +58,10 @@
             $luogo = trim($row["luogo"]);
             $ora = trim($row["ora"]);
             $url = trim($row["url"]);
-            $printString .= "           {\"id\": \"$id\", \"quantita\": \"$quantita\", \"dataOrdine\": \"$dataOrdine\", \"titolo\": \"$titolo\", \"descrizione\": \"$descrizione\", \"data\": \"$data\", \"prezzo\": \"$prezzo\", \"citta\": \"$citta\", \"luogo\": \"$luogo\", \"ora\": \"$ora\", \"url\": \"$url\"}";
+            $printString .= "           {\"id\": \"$id\", \"quantita\": \"$quantita\", \"dataOrdine\": \"$dataOrdine\", 
+                                         \"titolo\": \"$titolo\", \"descrizione\": \"$descrizione\", \"data\": \"$data\", 
+                                         \"prezzo\": \"$prezzo\", \"citta\": \"$citta\", \"luogo\": \"$luogo\", 
+                                         \"ora\": \"$ora\", \"url\": \"$url\"}";
             if ($matches_found < $matches - 1) {
                 $printString .= ",";
             }

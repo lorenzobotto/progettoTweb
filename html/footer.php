@@ -1,9 +1,20 @@
+        <!--    Nome:           Lorenzo
+                Cognome:        Botto
+                Descrizione:    Codice PHP/HTML per "footer.php" che verrà incluso in tutte le pagine del sito.
+                                Contiene varie sezioni, una per la parte sinistra del footer, una per la parte
+                                destra del footer e una per la parte in basso.
+        -->                
         <footer class="footer">
-            <div class="l-footer">
-                <h1><img src="../img/logo.png" alt=""></h1>
-                <p>DailyTicket è il punto di riferimento per l’acquisto di biglietti di tutti i più grandi eventi (musica, spettacolo, sport e cultura) che si svolgono in Italia. Con il nostro programma, avrai a disposizione molti eventi ogni anno: un catalogo che spazia dagli spettacoli più importanti fino a quelli di nicchia… Una varietà di offerta che si traduce in alta opportunità di conversione per i nostri affiliati.</p>
+            <div class="leftFooter">
+                <img src="../img/logo.png" alt="Logo">
+                <p>
+                    DailyTicket è il punto di riferimento per l’acquisto di biglietti di tutti i più grandi eventi
+                    (musica, spettacolo, sport e cultura) che si svolgono in Italia. Con il nostro programma, avrai
+                    a disposizione molti eventi ogni anno: un catalogo che spazia dagli spettacoli più importanti fino
+                    a quelli di nicchia… Una varietà di offerta che si traduce in alta opportunità di conversione per i nostri affiliati.
+                </p>
             </div>
-            <ul class="r-footer">
+            <ul class="rightFooter">
                 <li>
                     <h2>Eventi</h2>
                     <ul class="box">
@@ -16,14 +27,16 @@
                 <li>
                     <h2>Link utili</h2>
                     <ul class="box">
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="../html/eventi.php">Eventi</a></li>
-                        <li><a href="../html/contatti.php">Contatti</a></li>
+                        <li><a href="home.php">Home</a></li>
+                        <li><a href="eventi.php">Eventi</a></li>
+                        <li><a href="contatti.php">Contatti</a></li>
                         <?php
+                            // Se l'utente ha effettuato login mostro il link per logout.
                             if (isset($_SESSION['user'])){
                         ?>
-                                <li><a href="../php/logout.php">Logout</a></li>
+                                <li><a href="../php/utenti/logout.php">Logout</a></li>
                         <?php
+                            // Altrimenti mostro mostro il link per login e registrazione.
                             } else {
                         ?>
                                 <li><a id="footerRegistrazione">Registrazione</a></li>
@@ -54,7 +67,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="b-footer">
+            <div class="bottomFooter">
                 <p>© All rights reserved by Lorenzo Botto, 2020 </p>
             </div>
         </footer>
