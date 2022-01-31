@@ -7,7 +7,7 @@
                                 e sezione privata che verranno visualizzati solo quando si clicca sul link apposito.
         -->
         <header>
-            <a id="logo" href="home.php"><img src="../img/logo.png" alt="Logo"></a>
+            <a id="logo" href="../index.php"><img src="../img/logo.png" alt="Logo"></a>
             <?php
                 session_start();
                 
@@ -16,7 +16,7 @@
             ?>
                     <nav>
                         <ul id="nav">
-                            <li><a href="home.php">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <li><a href="eventi.php">Eventi</a></li>
                             <li><a href="contatti.php">Contatti</a></li>
                             <li>
@@ -93,7 +93,7 @@
             ?>
                     <nav>
                         <ul id="nav">
-                            <li><a href="home.php">Home</a></li>
+                            <li><a href="../index.php">Home</a></li>
                             <li><a href="eventi.php">Eventi</a></li>
                             <li><a href="contatti.php">Contatti</a></li>
                             <li>

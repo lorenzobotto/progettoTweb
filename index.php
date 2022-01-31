@@ -1,7 +1,7 @@
         <?php 
             /*   Nome:           Lorenzo
             *    Cognome:        Botto
-            *    Descrizione:    Codice PHP/HTML per la pagina "home.php", che include top, header e footer.
+            *    Descrizione:    Codice PHP/HTML per la pagina "index.php", che include top, header e footer.
             *                    Viene iniziata la sessione.
             *                    Contiene una sezione dove è presente il titolo e una sezione per il contenuto.
             */
@@ -9,11 +9,11 @@
             session_write_close();
             include("top.html");
         ?>
-        <script src="../js/home.js"></script>
-        <script src="../js/common.js"></script>
+        <script src="./js/home.js"></script>
+        <script src="./js/common.js"></script>
     </head>
     <body>
-        <?php include("header.php"); ?>
+        <?php include("./html/header.php"); ?>
         <div id="home">
             <div class="sectionContent">
                 <p id="testointro">Daily Ticket</p>
@@ -57,4 +57,4 @@
                 </p>
             </div>
         </div>
-        <?php include("footer.php"); ?>
+        <?php include("./html/footer.php"); ?>

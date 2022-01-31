@@ -1,6 +1,6 @@
 /*    Nome:          Lorenzo
  *    Cognome:       Botto
- *    Descrizione:   Codice JS per per la pagina "home.php", la homepage del sito.
+ *    Descrizione:   Codice JS per per la pagina "index.php", la homepage del sito.
  */
 
 /*

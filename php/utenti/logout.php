@@ -8,5 +8,5 @@
     session_unset();
     session_destroy();
     session_regenerate_id();
-    header('Location: ../../html/home.php');
+    header('Location: ../../html/index.php');
 ?>
