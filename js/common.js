@@ -30,7 +30,7 @@ $(function() {
      */
     $("#buttonRegistrati").click(function(event) {
         if ($("#nav").css("display") == "block") {
-            window.location = "register.php";
+            window.location = "../html/register.php";
         } else {
             event.preventDefault();
             if (statusRegistrati == false) {
@@ -55,7 +55,7 @@ $(function() {
     })
     $("#buttonLogin").click(function(event) {
         if ($("#nav").css("display") == "block") {
-            window.location = "login.php";
+            window.location = "../html/login.php";
         } else {
             event.preventDefault();
             if (statusLogin == false) {
@@ -182,7 +182,7 @@ $(function() {
      */
     $("#footerLogin").click(function(event) {
         if ($("#nav").css("display") == "none" || $("#nav").css("display") == "block") {
-            window.location = "login.php";
+            window.location = "../html/login.php";
         } else {
             event.preventDefault();
             if (statusLogin == false) {
@@ -211,7 +211,7 @@ $(function() {
     })
     $("#footerRegistrazione").click(function(event) {
         if ($("#nav").css("display") == "none" || $("#nav").css("display") == "block") {
-            window.location = "register.php";
+            window.location = "../html/register.php";
         } else {
             event.preventDefault();
             if (statusRegistrati == false) {
@@ -246,7 +246,7 @@ $(function() {
                 "<option value='Sport'>Sport</option><option value='MostreEMusei'>Mostre e Musei</option>" +
                 "<option value='Teatro'>Teatro</option></select>",
             success: function() {
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
         });
@@ -259,7 +259,7 @@ $(function() {
                 "<option value='Sport' selected>Sport</option><option value='MostreEMusei'>Mostre e Musei</option>" +
                 "<option value='Teatro'>Teatro</option></select>",
             success: function() {
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
         });
@@ -272,7 +272,7 @@ $(function() {
                 "<option value='Sport'>Sport</option><option value='MostreEMusei' selected>Mostre e Musei</option>" +
                 "<option value='Teatro'>Teatro</option></select>",
             success: function() {
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
         });
@@ -285,7 +285,7 @@ $(function() {
                 "<option value='Sport'>Sport</option><option value='MostreEMusei'>Mostre e Musei</option>" +
                 "<option value='Teatro' selected>Teatro</option></select>",
             success: function() {
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
         });
@@ -421,7 +421,7 @@ function loggedSite(response) {
         $.ajax({
             url: "../php/carrello/addCartNoLogin.php",
             success: function() {
-                window.location = "../html/index.php";
+                window.location = "../index.php";
             },
             error: ajaxFailed,
         });
