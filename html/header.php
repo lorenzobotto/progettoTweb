@@ -108,6 +108,7 @@
                                     <?php
                                         if (isset($_SESSION['index'])){
                                             include("./php/common/common.php");
+                                            unset($_SESSION['index']);
                                         } else {
                                             include("../php/common/common.php");
                                         }
