@@ -6,8 +6,8 @@
             <nav>
                 <ul id="nav">
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="./html/eventi.php">Eventi</a></li>
-                    <li><a href="./html/contatti.php">Contatti</a></li>
+                    <li><a href="../html/eventi.php">Eventi</a></li>
+                    <li><a href="../html/contatti.php">Contatti</a></li>
                     <li>
                         <div id='searchBox'>
                             <input class="searchTxt" type="text" name="" placeholder="Ricerca eventi">
@@ -15,7 +15,7 @@
                         </div>
                     </li>
                     <li>
-                        <a id="headerCarrello" href="./html/carrello.php">
+                        <a id="headerCarrello" href="../html/carrello.php">
                             <img id="cart" src="../img/cart-73-24.png" alt="">
                             <?php
                                 if (isset($_SESSION['cart'])){
@@ -75,8 +75,8 @@
             <nav>
                 <ul id="nav">
                     <li><a href="../index.php">Home</a></li>
-                    <li><a href="./html/eventi.php">Eventi</a></li>
-                    <li><a href="./html/contatti.php">Contatti</a></li>
+                    <li><a href="../html/eventi.php">Eventi</a></li>
+                    <li><a href="../html/contatti.php">Contatti</a></li>
                     <li>
                         <div id='searchBox'>
                             <input class="searchTxt" type="text" name="" placeholder="Ricerca eventi">
@@ -84,7 +84,7 @@
                         </div>
                     </li>
                     <li>
-                        <a id='headerCarrello' href="./html/carrello.php">
+                        <a id='headerCarrello' href="../html/carrello.php">
                             <img id="cart" src="../img/cart-73-24.png" alt="">
                             <?php
                                 include("../php/common.php");
@@ -100,7 +100,7 @@
                 <div id="arrowUpLogged"></div>
                 <div id="logoutForm">
                     <div id="bigliettiAcquistati">
-                        <a href="./html/biglietti.php"><p>Visualizza biglietti acquistati</p></a>
+                        <a href="../html/biglietti.php"><p>Visualizza biglietti acquistati</p></a>
                     </div>
                     <hr>
                     <button id="buttonLogoutForm">Logout</button>
