@@ -112,7 +112,6 @@
                                         } else {
                                             include("../php/common/common.php");
                                         }
-                                        
                                         $db = connect_database();
                                         $count = $db->prepare("SELECT count(*) as count FROM carrello WHERE username=" . $db->quote($_SESSION['user']));
                                         $count->execute();
