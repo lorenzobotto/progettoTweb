@@ -516,7 +516,7 @@ select {
 
 input[type="date"] {
     min-width: 120px;
-    max-width: 120px;
+    max-width: 125px;
     border-radius: 5px;
     border: 0;
     width: auto;
@@ -524,6 +524,7 @@ input[type="date"] {
     background: #4d5061;
     display: none;
     color: #fff;
+    padding-left: 5px;
 }
 
 #heroEventi h1 {
@@ -808,7 +809,6 @@ hr {
 #quantityDiv #customSelectCat select{
     font-size: 1rem;
     padding: 2px;
-    padding-right: 2rem;
 }
 
 #quantityDiv #customArrowCat::after, #quantityDiv #customArrowCat::before {
