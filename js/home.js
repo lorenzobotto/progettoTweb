@@ -179,7 +179,7 @@ $(function() {
         $('html,body').animate({scrollTop: offset}, 1000);
     })
     $("#acquistaHome").click(function(){
-        window.location = "eventi.php";
+        window.location = "../html/eventi.php";
     })
     $("#footerConcerti").click(function(){
         $.ajax({
@@ -187,7 +187,7 @@ $(function() {
             type: "POST",
             data: "optionSelected=<select id='listCat'><option value='Concerti' selected>Concerti</option><option value='Sport'>Sport</option><option value='MostreEMusei'>Mostre e Musei</option><option value='Teatro'>Teatro</option></select>",
             success: function(){
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
             }
@@ -199,7 +199,7 @@ $(function() {
             type: "POST",
             data: "optionSelected=<select id='listCat'><option value='Concerti'>Concerti</option><option value='Sport' selected>Sport</option><option value='MostreEMusei'>Mostre e Musei</option><option value='Teatro'>Teatro</option></select>",
             success: function(){
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
             }
@@ -211,7 +211,7 @@ $(function() {
             type: "POST",
             data: "optionSelected=<select id='listCat'><option value='Concerti'>Concerti</option><option value='Sport'>Sport</option><option value='MostreEMusei' selected>Mostre e Musei</option><option value='Teatro'>Teatro</option></select>",
             success: function(){
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
             }
@@ -223,7 +223,7 @@ $(function() {
             type: "POST",
             data: "optionSelected=<select id='listCat'><option value='Concerti'>Concerti</option><option value='Sport'>Sport</option><option value='MostreEMusei'>Mostre e Musei</option><option value='Teatro' selected>Teatro</option></select>",
             success: function(){
-                window.location = "eventi.php";
+                window.location = "../html/eventi.php";
             },
             error: ajaxFailed,
             }
