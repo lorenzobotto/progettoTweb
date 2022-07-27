@@ -78,7 +78,7 @@ function loggedSiteForm(response) {
         $.ajax({
             url: "../php/carrello/addCartNoLogin.php",
             success: function() {
-                window.location = "../index.php";
+                window.location = "../html/home.php";
             },
             error: ajaxFailed,
         });

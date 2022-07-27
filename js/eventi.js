@@ -253,7 +253,7 @@ function listaEventi(json) {
         /*
          *   Descrizione:  Evento di drop sull'icona del carrello nell'header.
          *                 Quando un biglietto e rilasciato dal mouse su questa icona,
-         *                 viene effettuata una chiamata ajax ad "addToCart.php" che aggiunge
+         *                 viene effettuata una chiamata ajax ad "addtoCart.php" che aggiunge
          *                 il biglietto al carrello. Vengono passati come parametri l'ID dell'evento
          *                 e la quantità. In caso di successo, mostrerà un feedback all'utente sia 
          *                 di errore che di successo.
@@ -264,7 +264,7 @@ function listaEventi(json) {
             var data = event.originalEvent.dataTransfer.getData("text");
             data = parseInt(data.substr(data.length - 1));
             $.ajax({
-                url: "../php/carrello/addToCart.php",
+                url: "../php/carrello/addtoCart.php",
                 type: "POST",
                 data: "addEvento=" + json.eventi[data].id + "&quantita=" + $("#quantity" + data + " option:selected").text().trim(),
                 success: function(response) {
@@ -355,14 +355,14 @@ function listaEventi(json) {
 
 /*
  *   Descrizione:  Funzione che aggiunge un biglietto al carrello effettuando
- *                 una chiamata ajax ad "addToCart.php" che aggiunge
+ *                 una chiamata ajax ad "addtoCart.php" che aggiunge
  *                 il biglietto al carrello. Vengono passati come parametri l'ID dell'evento
  *                 e la quantità. In caso di successo, mostrerà un feedback all'utente sia 
  *                 di errore che di successo.
  */
 function listenerAddButton(e) {
     $.ajax({
-        url: "../php/carrello/addToCart.php",
+        url: "../php/carrello/addtoCart.php",
         type: "POST",
         data: "addEvento=" + e.data.param1 + "&quantita=" + $("#quantity" + e.data.param2 + " option:selected").text().trim(),
         success: function(response) {

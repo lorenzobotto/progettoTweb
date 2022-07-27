@@ -17,11 +17,7 @@
             foreach ($_SESSION['cart'] as $row){
                 $ids = $ids . $db->quote($row['idEvento']) . ",";
             }
-            if ($ids == "") {
-                $queryString = "SELECT * FROM eventi WHERE id IN ('" . substr($ids, 0, -1) . "') ORDER BY FIELD(id, '" . substr($ids, 0, -1) . "')";
-            } else {
-                $queryString = "SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")";
-            }
+            $queryString = "SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")";
             try {
                 $cart = $db->prepare($queryString);
                 $cart->execute();
@@ -44,11 +40,7 @@
             while($row = $idsDb->fetch()){
                 $ids = $ids . $db->quote($row['idEvento']) . ",";
             }
-            if ($ids == "") {
-                $cart = $db->prepare("SELECT * FROM eventi WHERE id IN ('" . substr($ids, 0, -1) . "') ORDER BY FIELD(id, '" . substr($ids, 0, -1) . "')");
-            } else {
-                $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
-            }
+            $cart = $db->prepare("SELECT * FROM eventi WHERE id IN (" . substr($ids, 0, -1) . ") ORDER BY FIELD(id, " . substr($ids, 0, -1) . ")");
             $cart->execute();
         } catch(PDOException $ex){
             die('Error in making query: ' . $ex->getMessage());

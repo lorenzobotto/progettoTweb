@@ -27,7 +27,7 @@
                 <li>
                     <h2>Link utili</h2>
                     <ul class="box">
-                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="home.php">Home</a></li>
                         <li><a href="eventi.php">Eventi</a></li>
                         <li><a href="contatti.php">Contatti</a></li>
                         <?php

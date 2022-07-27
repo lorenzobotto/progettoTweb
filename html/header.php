@@ -7,7 +7,7 @@
                                 e sezione privata che verranno visualizzati solo quando si clicca sul link apposito.
         -->
         <header>
-            <a id="logo" href="../index.php"><img src="../img/logo.png" alt="Logo"></a>
+            <a id="logo" href="home.php"><img src="../img/logo.png" alt="Logo"></a>
             <?php
                 session_start();
                 
@@ -16,9 +16,9 @@
             ?>
                     <nav>
                         <ul id="nav">
-                            <li><a href="../index.php">Home</a></li>
-                            <li><a href="../html/eventi.php">Eventi</a></li>
-                            <li><a href="../html/contatti.php">Contatti</a></li>
+                            <li><a href="home.php">Home</a></li>
+                            <li><a href="eventi.php">Eventi</a></li>
+                            <li><a href="contatti.php">Contatti</a></li>
                             <li>
                                 <div id='searchBox'>
                                     <input class="searchTxt" type="text" name="searchInput" placeholder="Ricerca eventi">
@@ -26,7 +26,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a id="headerCarrello" href="../html/carrello.php">
+                                <a id="headerCarrello" href="carrello.php">
                                     <img id="cart" src="../img/cart-73-24.png" alt="">
                                     <?php
                                         if (isset($_SESSION['cart'])){
@@ -93,9 +93,9 @@
             ?>
                     <nav>
                         <ul id="nav">
-                            <li><a href="../index.php">Home</a></li>
-                            <li><a href="../html/eventi.php">Eventi</a></li>
-                            <li><a href="../html/contatti.php">Contatti</a></li>
+                            <li><a href="home.php">Home</a></li>
+                            <li><a href="eventi.php">Eventi</a></li>
+                            <li><a href="contatti.php">Contatti</a></li>
                             <li>
                                 <div id='searchBox'>
                                     <input class="searchTxt" type="text" name="searchInput" placeholder="Ricerca eventi">
@@ -103,15 +103,10 @@
                                 </div>
                             </li>
                             <li>
-                                <a id='headerCarrello' href="../html/carrello.php">
+                                <a id='headerCarrello' href="carrello.php">
                                     <img id="cart" src="../img/cart-73-24.png" alt="Icona del carrello">
                                     <?php
-                                        if (isset($_SESSION['index'])){
-                                            include("./php/common/common.php");
-                                            unset($_SESSION['index']);
-                                        } else {
-                                            include("../php/common/common.php");
-                                        }
+                                        include("../php/common/common.php");
                                         $db = connect_database();
                                         $count = $db->prepare("SELECT count(*) as count FROM carrello WHERE username=" . $db->quote($_SESSION['user']));
                                         $count->execute();
@@ -120,13 +115,13 @@
                                 </a>
                             </li>
                             <li><a id="userLogged"><img id="user" src="../img/user-2-16.ico" alt="Icona dell'utente"> <?= $_SESSION['user'] ?></a></li>
-                            <li id="bigliettiInNav"><a href="../html/biglietti.php">Biglietti acquistati</a></li>
+                            <li id="bigliettiInNav"><a href="biglietti.php">Biglietti acquistati</a></li>
                             <li id="logoutInNav"><a href="../php/utenti/logout.php">Logout</a></li>
                         </ul>
                         <div id="arrowUpLogged"></div>
                         <div id="logoutForm">
                             <div id="bigliettiAcquistati">
-                                <a href="../html/biglietti.php"><p>Biglietti acquistati</p></a>
+                                <a href="biglietti.php"><p>Biglietti acquistati</p></a>
                             </div>
                             <hr>
                             <button id="buttonLogoutForm">Logout</button>

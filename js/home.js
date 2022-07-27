@@ -1,6 +1,6 @@
 /*    Nome:          Lorenzo
  *    Cognome:       Botto
- *    Descrizione:   Codice JS per per la pagina "index.php", la homepage del sito.
+ *    Descrizione:   Codice JS per per la pagina "home.php", la homepage del sito.
  */
 
 /*
@@ -9,6 +9,6 @@
 $(function() {
     // Si definisce il click per i pulsanti di acquisto biglietti.
     $(".acquistaHome").click(function() {
-        window.location = "./html/eventi.php";
+        window.location = "eventi.php";
     })
 });

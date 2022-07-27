@@ -1,20 +1,19 @@
         <?php 
             /*   Nome:           Lorenzo
             *    Cognome:        Botto
-            *    Descrizione:    Codice PHP/HTML per la pagina "index.php", che include top, header e footer.
+            *    Descrizione:    Codice PHP/HTML per la pagina "home.php", che include top, header e footer.
             *                    Viene iniziata la sessione.
             *                    Contiene una sezione dove è presente il titolo e una sezione per il contenuto.
             */
             session_start();
-            $_SESSION['index'] = 'true';
             session_write_close();
-            include("./html/top.html");
+            include("top.html");
         ?>
-        <script src="./js/home.js"></script>
-        <script src="./js/common.js"></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/common.js"></script>
     </head>
     <body>
-        <?php include("./html/header.php"); ?>
+        <?php include("header.php"); ?>
         <div id="home">
             <div class="sectionContent">
                 <p id="testointro">Daily Ticket</p>
@@ -58,4 +57,4 @@
                 </p>
             </div>
         </div>
-        <?php include("./html/footer.php"); ?>
+        <?php include("footer.php"); ?>
