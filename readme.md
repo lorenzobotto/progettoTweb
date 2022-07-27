@@ -11,6 +11,6 @@ controllare tutti gli ordini effettuati.
 
 ## Come eseguire
 
-Avere un qualsiasi ambienti di sviluppo di PHP (io ho usato XAMPP), modificare la stringa di connessione al database, se necessario, all'interno della cartella php --> carrello --> common --> common.php. Inoltre, per utilizzare il sito bisogna importare tutte le tabelle e i dati necessari all'interno del database dal dump che si trova nella cartella db --> dailyticket.sql (Il database è da creare a parte).
+Avere un qualsiasi ambienti di sviluppo di PHP (io ho usato XAMPP), modificare la stringa di connessione al database, se necessario, all'interno della cartella php -->  common --> common.php. Inoltre, per utilizzare il sito bisogna importare tutte le tabelle e i dati necessari all'interno del database dal dump che si trova nella cartella db --> dailyticket.sql (Il database è da creare a parte).
 
 Successivamente si può aprire home.php tramite il proprio ambiente di sviluppo PHP e navigare sul sito.
