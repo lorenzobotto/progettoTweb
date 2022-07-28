@@ -14,3 +14,9 @@ controllare tutti gli ordini effettuati.
 Avere un qualsiasi ambienti di sviluppo di PHP (io ho usato XAMPP), modificare la stringa di connessione al database, se necessario, all'interno della cartella php -->  common --> common.php. Inoltre, per utilizzare il sito bisogna importare tutte le tabelle e i dati necessari all'interno del database dal dump che si trova nella cartella db --> dailyticket.sql (Il database è da creare a parte).
 
 Successivamente si può aprire home.php tramite il proprio ambiente di sviluppo PHP e navigare sul sito.
+
+## Video esecuzione del progetto
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VTwBUHzzBoY
+" rel="noopener" target="_blank"><img src="http://img.youtube.com/vi/VTwBUHzzBoY/0.jpg" 
+alt="Esecuzione TWeb" width="400" border="10" /></a>
